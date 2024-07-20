@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react"
 import { BASE_API_URL } from "../../constants/api";
 import ProductCard from "../../components/ProductCard";
+import Loading from "../../components/Loading";
 
 export default function Home() {
 
@@ -76,7 +77,7 @@ export default function Home() {
 
             {/* Tampilkan Loading Jika isLoading True */}
             {isLoading ? (
-                <p>Loading...</p>
+                <Loading />
             ) : (
                 // Tampilkan Data Product Jika Tidak Loading
                 <>
