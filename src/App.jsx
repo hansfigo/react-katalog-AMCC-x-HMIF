@@ -10,15 +10,15 @@ function App() {
   return (
     <>
       <Router>
+        <Navbar />
         <Container>
-          <Navbar />
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about-us" element={<AboutUs />} />
             <Route path="/products/:id" element={<ProductDetail />}></Route>
           </Routes>
-          <Footer />
         </Container>
+        <Footer />
       </Router>
     </>
   )
