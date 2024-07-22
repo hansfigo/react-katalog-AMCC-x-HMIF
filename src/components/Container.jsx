@@ -1,7 +1,7 @@
 export default function Container({ children }) {
     return (
-        <section className='w-full h-screen flex justify-center'>
-            <div className="container flex min-h-full flex-col justify-between">
+        <section className='w-full flex justify-center px-6 xl:px-24'>
+            <div className="container flex flex-col gap-y-32">
                 {children}
             </div>
         </section>
