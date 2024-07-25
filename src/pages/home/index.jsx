@@ -1,10 +1,16 @@
+import React from "react";
 import Hero from "./components/Hero";
-import Products from "./components/Products";
+import Skills from "./components/Skills";
+import Experiences from "./components/Experiences";
 
-// kontent list nya Home Page
-export default function Home() {
-    return <>
-        <Hero />
-        <Products />
-    </>
-}
+const Home = () => {
+    return (
+        <>
+            <Hero />
+            <Skills />
+            <Experiences />
+        </>
+    );
+};
+
+export default Home;
